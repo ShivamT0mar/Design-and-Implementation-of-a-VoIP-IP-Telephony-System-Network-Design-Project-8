@@ -1,0 +1,29 @@
+Finance_Router(config)#ip dhcp pool Finance_VoIP
+Finance_Router(dhcp-config)#network 172.16.50.0 255.255.255.224
+Finance_Router(dhcp-config)#default-router 172.16.50.1
+Finance_Router(dhcp-config)#option 150 ip 172.16.50.1
+Finance_Router(dhcp-config)#exit
+
+*****************************************************************
+
+HR_Router(config)#ip dhcp pool HR_VoIP
+HR_Router(dhcp-config)#network 172.16.50.32 255.255.255.224
+HR_Router(dhcp-config)#default-router 172.16.50.33
+HR_Router(dhcp-config)#option 150 ip 172.16.50.33
+HR_Router(dhcp-config)#exit
+
+*****************************************************************
+
+Sales_Router(config)#ip dhcp pool Sales_VoIP
+Sales_Router(dhcp-config)#network 172.16.50.64 255.255.255.224
+Sales_Router(dhcp-config)#default-router 172.16.50.65
+Sales_Router(dhcp-config)#option 150 ip 172.16.50.65
+Sales_Router(dhcp-config)#exit
+
+*****************************************************************
+
+ICT&Server_Router(config)#ip dhcp pool ICT_VoIP
+ICT&Server_Router(dhcp-config)#network 172.16.50.96 255.255.255.224
+ICT&Server_Router(dhcp-config)#default-router 172.16.50.97
+ICT&Server_Router(dhcp-config)#option 150 ip 172.16.50.97
+ICT&Server_Router(dhcp-config)#exit

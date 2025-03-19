@@ -1,0 +1,42 @@
+Finance_Router(config)#ip domain name Finance_Router
+Finance_Router(config)#crypto key generate rsa
+How many bits in the modulus [512]: 514
+Finance_Router(config)#line vty 0
+Finance_Router(config-line)#transport input ssh
+Finance_Router(config-line)#login local
+Finance_Router(config-line)#username Finance_Router password 10.10.10.9/30
+Finance_Router(config)#ip ssh version 2
+
+
+
+HR_Router(config)#ip domain name HR_Router
+HR_Router(config)#crypto key generate rsa
+How many bits in the modulus [512]: 616
+HR_Router(config)#line vty 0
+HR_Router(config-line)#transport input ssh
+HR_Router(config-line)#login local
+HR_Router(config-line)#username HR_Router password 10.10.10.6/30
+HR_Router(config)#ip ssh version 2
+
+
+
+Sales_Router(config)#ip domain name Sales_Router
+Sales_Router(config)#crypto key generate rsa
+How many bits in the modulus [512]: 649
+Sales_Router(config)#line vty 0
+Sales_Router(config-line)#transport input ssh
+Sales_Router(config-line)#login local
+Sales_Router(config-line)#username Sales_Router password 10.10.10.14/30
+Sales_Router(config)#ip ssh version 2
+
+
+ICT&Server_Router(config)#ip domain name ICT&Server_Router
+ICT&Server_Router(config)#crypto key generate rsa
+How many bits in the modulus [512]: 729
+ICT&Server_Router(config)#line vty 0
+ICT&Server_Router(config-line)#transport input ssh
+ICT&Server_Router(config-line)#login local
+ICT&Server_Router(config-line)#username ICT&Server_Router password 10.10.10.10/30
+ICT&Server_Router(config)#ip ssh version 2
+
+

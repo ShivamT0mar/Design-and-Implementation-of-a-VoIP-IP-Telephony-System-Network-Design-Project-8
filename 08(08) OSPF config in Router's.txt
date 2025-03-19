@@ -1,0 +1,40 @@
+Finance_Router(config)#router ospf 10
+Finance_Router(config-router)#network 10.10.10.0 0.0.0.3 area 0
+Finance_Router(config-router)#network 10.10.10.8 0.0.0.3 area 0
+Finance_Router(config-router)#network 192.168.1.0 0.0.0.31 area 0
+Finance_Router(config-router)#network 172.16.50.0 0.0.0.31 area 0
+Finance_Router(config-router)#exit
+
+
+*****************************************************************
+
+
+HR_Router(config)#router ospf 10
+HR_Router(config-router)#network 10.10.10.0 0.0.0.3 area 0
+HR_Router(config-router)#network 10.10.10.4 0.0.0.3 area 0
+HR_Router(config-router)#network 192.168.1.32 0.0.0.31 area 0
+HR_Router(config-router)#network 172.16.50.32 0.0.0.31 area 0
+HR_Router(config-router)#exit
+
+
+*****************************************************************
+
+
+Sales_Router(config)#router ospf 10
+Sales_Router(config-router)#network 10.10.10.4 0.0.0.3 area 0
+Sales_Router(config-router)#network 10.10.10.12 0.0.0.3 area 0
+Sales_Router(config-router)#network 192.168.1.64 0.0.0.31 area 0
+Sales_Router(config-router)#network 172.16.50.64 0.0.0.31 area 0
+Sales_Router(config-router)#exit
+
+
+*****************************************************************
+
+
+ICT&Server_Router(config)#router ospf 10
+ICT&Server_Router(config-router)#network 10.10.10.12 0.0.0.3 area 0
+ICT&Server_Router(config-router)#network 10.10.10.8 0.0.0.3 area 0
+ICT&Server_Router(config-router)#network 192.168.1.96 0.0.0.31 area 0
+ICT&Server_Router(config-router)#network 172.16.50.96 0.0.0.31 area 0
+ICT&Server_Router(config-router)#network 192.168.1.128 0.0.0.31 area 0
+ICT&Server_Router(config-router)#exit

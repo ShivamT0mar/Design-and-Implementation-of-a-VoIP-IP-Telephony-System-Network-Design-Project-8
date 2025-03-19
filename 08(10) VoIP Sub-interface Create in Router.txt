@@ -1,0 +1,25 @@
+Finance_Router(config)#int f0/0.100
+Finance_Router(config-subif)#encapsulation dot1Q 100
+Finance_Router(config-subif)#ip address 172.16.50.1 255.255.255.224
+Finance_Router(config-subif)#exit
+
+**************************************************************************
+
+HR_Router(config)#int f0/0.200
+HR_Router(config-subif)#encapsulation dot1Q 200
+HR_Router(config-subif)#ip address 172.16.50.33 255.255.255.224
+HR_Router(config-subif)#exit
+
+**************************************************************************
+
+Sales_Router(config)#int f0/0.300
+Sales_Router(config-subif)#encapsulation dot1Q 300
+Sales_Router(config-subif)#ip address 172.16.50.65 255.255.255.224
+Sales_Router(config-subif)#exit
+
+**************************************************************************
+
+ICT&Server_Router(config)#int f0/0.400
+ICT&Server_Router(config-subif)#encapsulation dot1Q 400
+ICT&Server_Router(config-subif)#ip address 172.16.50.97 255.255.255.224
+ICT&Server_Router(config-subif)#exit

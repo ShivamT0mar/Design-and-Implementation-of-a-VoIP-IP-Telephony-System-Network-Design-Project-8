@@ -1,0 +1,44 @@
+Finance_Router(config)#banner motd #
+*************************************************
+Execution mode password: Finance_Router
+Privilege mode password: 10.10.10.1/30
+SSH Username: Finance_Router Password: 10.10.10.9/30
+*************************************************
+#
+Finance_Router(config)#do wr
+
+
+
+HR_Router(config)#banner motd #
+*************************************************
+Execution mode password: HR_Router
+Privilege mode password: 10.10.10.2/30
+SSH Username: HR_Router Password: 10.10.10.6/30
+*************************************************
+#
+HR_Router(config)#do wr
+
+
+
+Sales_Router(config)#banner motd #
+*************************************************
+Execution mode password: Sales_Router
+Privilege mode password: 10.10.10.5/30
+SSH Username: Sales_Router Password: 10.10.10.14/30
+*************************************************
+#
+Sales_Router(config)#do wr
+
+
+
+ICT&Server_Router(config)#banner motd #
+*************************************************
+Execution mode password: ICT&Server_Router
+Privilege mode password: 10.10.10.13/30
+SSH Username: ICT&Server_Router Password: 10.10.10.10/30
+*************************************************
+#
+ICT&Server_Router(config)#do wr
+
+
+

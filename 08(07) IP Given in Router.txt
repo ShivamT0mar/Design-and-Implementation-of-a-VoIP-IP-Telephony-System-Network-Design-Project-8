@@ -1,0 +1,48 @@
+Finance_Router(config)#int s0/0/0
+Finance_Router(config-if)#ip address 10.10.10.1 255.255.255.252
+Finance_Router(config-if)#clock rate 64000
+Finance_Router(config-if)#no shut
+Finance_Router(config-if)#exit
+Finance_Router(config)#int s0/0/1
+Finance_Router(config-if)#ip address 10.10.10.10 255.255.255.252
+Finance_Router(config-if)#no shut
+
+
+*************************************************************************
+
+
+HR_Router(config)#int s0/0/0
+HR_Router(config-if)#ip address 10.10.10.2 255.255.255.252
+HR_Router(config-if)#no shut
+HR_Router(config-if)#exit
+HR_Router(config)#int s0/0/1
+HR_Router(config-if)#ip address 10.10.10.5 255.255.255.252
+HR_Router(config-if)#no shut
+HR_Router(config-if)#exit
+
+
+*************************************************************************
+
+
+Sales_Router(config)#int s0/0/1
+Sales_Router(config-if)#ip address 10.10.10.6 255.255.255.252
+Sales_Router(config-if)#clock rate 64000
+Sales_Router(config-if)#no shut
+Sales_Router(config-if)#exit
+Sales_Router(config)#int s0/0/0
+Sales_Router(config-if)#ip address 10.10.10.13 255.255.255.252
+Sales_Router(config-if)#clock rate 64000
+Sales_Router(config-if)#no shut
+
+
+**************************************************************************
+
+
+ICT&Server_Router(config)#int s0/0/0
+ICT&Server_Router(config-if)#ip address 10.10.10.14 255.255.255.252
+ICT&Server_Router(config-if)#no shut
+ICT&Server_Router(config-if)#exit
+ICT&Server_Router(config)#int s0/0/1
+ICT&Server_Router(config-if)#ip address 10.10.10.9 255.255.255.252
+ICT&Server_Router(config-if)#clock rate 64000
+ICT&Server_Router(config-if)#no shut

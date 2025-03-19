@@ -1,0 +1,57 @@
+Finance_Router(config)#int f0/0
+Finance_Router(config-if)#no shut
+Finance_Router(config-if)#exit
+Finance_Router(config)#int f0/0.10
+Finance_Router(config-subif)#encapsulation dot1Q 10
+Finance_Router(config-subif)#ip address 192.168.1.1 255.255.255.224
+Finance_Router(config-subif)#ip helper-address 192.168.1.132
+Finance_Router(config-subif)#exit
+
+
+************************************************************************
+
+
+HR_Router(config)#int f0/0
+HR_Router(config-if)#no shut
+HR_Router(config-if)#exit
+HR_Router(config)#int f0/0.20
+HR_Router(config-subif)#encapsulation dot1Q 20
+HR_Router(config-subif)#ip address 192.168.1.33 255.255.255.224
+HR_Router(config-subif)#ip helper-address 192.168.1.132
+HR_Router(config-subif)#exit
+
+
+************************************************************************
+
+
+Sales_Router(config)#int f0/0
+Sales_Router(config-if)#no shut
+Sales_Router(config-if)#exit
+Sales_Router(config)#int f0/0.30
+Sales_Router(config-subif)#encapsulation dot1Q 30
+Sales_Router(config-subif)#ip address 192.168.1.65 255.255.255.224
+Sales_Router(config-subif)#ip helper-address 192.168.1.132
+Sales_Router(config-subif)#exit
+
+
+************************************************************************
+
+
+ICT&Server_Router(config)#int f0/0
+ICT&Server_Router(config-if)#no shut
+ICT&Server_Router(config-if)#exit
+ICT&Server_Router(config)#int f0/0.40
+ICT&Server_Router(config-subif)#encapsulation dot1Q 40
+ICT&Server_Router(config-subif)#ip address 192.168.1.97 255.255.255.224
+ICT&Server_Router(config-subif)#ip helper-address 192.168.1.132
+ICT&Server_Router(config-subif)#exit
+
+************************************************************************
+
+ICT&Server_Router(config)#int f0/1
+ICT&Server_Router(config-if)#no shut
+ICT&Server_Router(config-if)#exit
+ICT&Server_Router(config)#int f0/1.50
+ICT&Server_Router(config-subif)#encapsulation dot1Q 50
+ICT&Server_Router(config-subif)#ip address 192.168.1.129 255.255.255.224
+ICT&Server_Router(config-subif)#exit

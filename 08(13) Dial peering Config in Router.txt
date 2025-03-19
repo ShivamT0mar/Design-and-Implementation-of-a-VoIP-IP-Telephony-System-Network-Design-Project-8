@@ -1,0 +1,67 @@
+
+********************************* 101 to 110 ******************************
+
+
+Finance_Router(config)#dial-peer voice 1 voip
+Finance_Router(config-dial-peer)#destination-pattern 2..
+Finance_Router(config-dial-peer)#session target ipv4:10.10.10.2
+Finance_Router(config-dial-peer)#exit
+Finance_Router(config)#dial-peer voice 2 voip
+Finance_Router(config-dial-peer)#destination-pattern 4..
+Finance_Router(config-dial-peer)#session target ipv4:10.10.10.9
+Finance_Router(config-dial-peer)#exit
+Finance_Router(config)#dial-peer voice 3 voip
+Finance_Router(config-dial-peer)#destination-pattern 3..
+Finance_Router(config-dial-peer)#session target ipv4:10.10.10.6
+Finance_Router(config-dial-peer)#exit
+
+
+********************************* 201 to 210 ******************************
+
+
+HR_Router(config)#dial-peer voice 1 voip
+HR_Router(config-dial-peer)#destination-pattern 1..
+HR_Router(config-dial-peer)#session target ipv4:10.10.10.1
+HR_Router(config-dial-peer)#exit
+HR_Router(config)#dial-peer voice 2 voip
+HR_Router(config-dial-peer)#destination-pattern 4..
+HR_Router(config-dial-peer)#session target ipv4:10.10.10.9
+HR_Router(config-dial-peer)#exit
+HR_Router(config)#dial-peer voice 3 voip
+HR_Router(config-dial-peer)#destination-pattern 3..
+HR_Router(config-dial-peer)#session target ipv4:10.10.10.6
+HR_Router(config-dial-peer)#exit
+
+
+********************************* 301 to 310 ******************************
+
+
+Sales_Router(config)#dial-peer voice 1 voip
+Sales_Router(config-dial-peer)#destination-pattern 2..
+Sales_Router(config-dial-peer)#session target ipv4:10.10.10.5
+Sales_Router(config-dial-peer)#exit
+Sales_Router(config)#dial-peer voice 2 voip
+Sales_Router(config-dial-peer)#destination-pattern 4..
+Sales_Router(config-dial-peer)#session target ipv4:10.10.10.14
+Sales_Router(config-dial-peer)#exit
+Sales_Router(config)#dial-peer voice 3 voip
+Sales_Router(config-dial-peer)#destination-pattern 1..
+Sales_Router(config-dial-peer)#session target ipv4:10.10.10.1
+Sales_Router(config-dial-peer)#exit
+
+
+********************************* 401 to 410 ******************************
+
+
+ICT&Server_Router(config)#dial-peer voice 1 voip
+ICT&Server_Router(config-dial-peer)#destination-pattern 1..
+ICT&Server_Router(config-dial-peer)#session target ipv4:10.10.10.10
+ICT&Server_Router(config-dial-peer)#exit
+ICT&Server_Router(config)#dial-peer voice 2 voip
+ICT&Server_Router(config-dial-peer)#destination-pattern 3..
+ICT&Server_Router(config-dial-peer)#session target ipv4:10.10.10.13
+ICT&Server_Router(config-dial-peer)#exit
+ICT&Server_Router(config)#dial-peer voice 3 voip
+ICT&Server_Router(config-dial-peer)#destination-pattern 2..
+ICT&Server_Router(config-dial-peer)#session target ipv4:10.10.10.2
+ICT&Server_Router(config-dial-peer)#exit

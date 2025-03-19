@@ -1,0 +1,85 @@
+Finance_Switch(config)#vlan 10
+Finance_Switch(config-vlan)#name Finace
+Finance_Switch(config-vlan)#int range f0/1-20
+Finance_Switch(config-if-range)#switchport access vlan 10
+Finance_Switch(config-if-range)#exit
+Finance_Switch(config)#vlan 100
+Finance_Switch(config-vlan)#name Finace_VoIP
+Finance_Switch(config-vlan)#int range f0/1-10 , f0/12-20
+Finance_Switch(config-if-range)#switchport voice vlan 100
+Finance_Switch(config-if-range)#exit
+
+Finance_Switch(config)#int g0/1
+Finance_Switch(config-if)#switchport mode trunk
+Finance_Switch(config-if)#exit
+
+
+***********************************************************
+
+
+HR_Switch(config)#vlan 20
+HR_Switch(config-vlan)#name HR
+HR_Switch(config-vlan)#int range f0/1-20
+HR_Switch(config-if-range)#switchport access vlan 20
+HR_Switch(config-if-range)#exit
+HR_Switch(config)#vlan 200
+HR_Switch(config-vlan)#name HR_VoIP
+HR_Switch(config-vlan)#int range f0/1-10 , f0/12-20
+HR_Switch(config-if-range)#switchport voice vlan 200
+HR_Switch(config-if-range)#exit
+
+HR_Switch(config)#int g0/1
+HR_Switch(config-if)#switchport mode trunk
+HR_Switch(config-if)#exit
+
+
+***********************************************************
+
+
+Sales_Switch(config)#vlan 30
+Sales_Switch(config-vlan)#name Sales
+Sales_Switch(config-vlan)#int range f0/1-20
+Sales_Switch(config-if-range)#switchport access vlan 30
+Sales_Switch(config-if-range)#exit
+Sales_Switch(config)#vlan 300
+Sales_Switch(config-vlan)#name Sales_VoIP
+Sales_Switch(config-vlan)#int range f0/1-10 , f0/12-20
+Sales_Switch(config-if-range)#switchport voice vlan 300
+Sales_Switch(config-if-range)#exit
+
+Sales_Switch(config)#int g0/1
+Sales_Switch(config-if)#switchport mode trunk
+Sales_Switch(config-if)#exit
+
+
+***********************************************************
+
+
+ICT_Switch(config)#vlan 40
+ICT_Switch(config-vlan)#name ICT
+ICT_Switch(config-vlan)#int range f0/1-20
+ICT_Switch(config-if-range)#switchport access vlan 40
+ICT_Switch(config-if-range)#exit
+ICT_Switch(config)#vlan 400
+ICT_Switch(config-vlan)#name ICT_VoIP
+ICT_Switch(config-vlan)#int range f0/1-10 , f0/12-20
+ICT_Switch(config-if-range)#switchport voice vlan 400
+ICT_Switch(config-if-range)#exit
+
+ICT_Switch(config)#int g0/1
+ICT_Switch(config-if)#switchport mode trunk
+ICT_Switch(config-if)#exit
+
+
+***********************************************************
+
+
+Server-Room_Switch(config)#vlan 50
+Server-Room_Switch(config-vlan)#name "Server Room"
+Server-Room_Switch(config-vlan)#int range f0/1-22
+Server-Room_Switch(config-if-range)#switchport access vlan 50
+Server-Room_Switch(config-if-range)#exit
+
+Server-Room_Switch(config)#int g0/1
+Server-Room_Switch(config-if)#switchport mode trunk
+Server-Room_Switch(config-if)#exit

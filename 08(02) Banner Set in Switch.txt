@@ -1,0 +1,57 @@
+Finance_Switch(config)#banner motd #
+*************************************************
+Execution mode password: Finance_Switch
+Privilege mode password: 192.168.1.0/27
+line vty: 172.16.50.0/27
+*************************************************
+#
+Finance_Switch(config)#do wr
+
+_________________________________________________________________
+
+
+HR_Switch(config)#banner motd #
+*************************************************
+Execution mode password: HR_Switch
+Privilege mode password: 192.168.1.32/27
+line vty: 172.16.50.32/27
+*************************************************
+#
+HR_Switch(config)#do wr
+
+_________________________________________________________________
+
+
+Sales_Switch(config)#banner motd #
+*************************************************
+Execution mode password: Sales_Switch
+Privilege mode password: 192.168.1.64/27
+line vty: 172.16.50.64/27
+*************************************************
+#
+Sales_Switch(config)#do wr
+
+_________________________________________________________________
+
+
+ICT_Switch(config)#banner motd #
+*************************************************
+Execution mode password: ICT_Switch
+Privilege mode password: 192.168.1.96/27
+line vty: 172.16.50.96/27
+*************************************************
+#
+ICT_Switch(config)#do wr
+
+_________________________________________________________________
+
+
+Server_Switch(config)#banner motd #
+*************************************************
+Execution mode password: Server-Room_Switch
+Privilege mode password: 192.168.1.128/27
+line vty: 172.16.50.128/27
+*************************************************
+#
+
+Server_Switch(config)#do wr

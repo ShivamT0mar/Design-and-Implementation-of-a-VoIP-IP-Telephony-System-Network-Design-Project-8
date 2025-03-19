@@ -1,0 +1,28 @@
+Finance_Router(config)#line console 0
+Finance_Router(config-line)#password Finance_Router
+Finance_Router(config-line)#login
+Finance_Router(config-line)#enable secret 10.10.10.1/30
+Finance_Router(config)#no ip domain-lookup
+
+
+HR_Router(config)#line console 0
+HR_Router(config-line)#password HR_Router
+HR_Router(config-line)#login
+HR_Router(config-line)#enable secret 10.10.10.2/30
+HR_Router(config)#no ip domain-lookup
+
+
+Sales_Router(config)#line console 0
+Sales_Router(config-line)#password Sales_Router
+Sales_Router(config-line)#login
+Sales_Router(config-line)#enable secret 10.10.10.5/30
+Sales_Router(config)#no ip domain-lookup
+
+
+ICT&Server_Router(config)#line console 0
+ICT&Server_Router(config-line)#password ICT&Server_Router
+ICT&Server_Router(config-line)#login
+ICT&Server_Router(config-line)#enable secret 10.10.10.13/30
+ICT&Server_Router(config)#no ip domain-lookup
+
+

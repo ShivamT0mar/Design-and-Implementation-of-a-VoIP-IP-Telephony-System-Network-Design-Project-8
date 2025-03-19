@@ -1,0 +1,57 @@
+Finance_Switch(config)#hostname Finance_Switch
+Finance_Switch(config)#line console 0
+Finance_Switch(config-line)#password Finance_Switch
+Finance_Switch(config-line)#login
+Finance_Switch(config-line)#enable secret 192.168.1.0/27
+Finance_Switch(config)#line vty 0
+Finance_Switch(config-line)#password 172.16.50.0/27
+Finance_Switch(config-line)#login
+Finance_Switch(config-line)#no ip domain-lookup
+
+*************************************************************
+
+HR_Switch(config)#hostname HR_Switch
+HR_Switch(config)#line console 0
+HR_Switch(config-line)#password HR_Switch
+HR_Switch(config-line)#login
+HR_Switch(config-line)#enable secret 192.168.1.32/27
+HR_Switch(config)#line vty 0
+HR_Switch(config-line)#password 172.16.50.32/27
+HR_Switch(config-line)#login
+HR_Switch(config-line)#no ip domain-lookup
+
+*************************************************************
+
+Sales_Switch(config)#hostname Sales_Switch
+Sales_Switch(config)#line console 0
+Sales_Switch(config-line)#password Sales_Switch
+Sales_Switch(config-line)#login
+Sales_Switch(config-line)#enable secret 192.168.1.64/27
+Sales_Switch(config)#line vty 0
+Sales_Switch(config-line)#password 172.16.50.64/27
+Sales_Switch(config-line)#login
+Sales_Switch(config-line)#no ip domain-lookup
+
+**************************************************************
+
+ICT_Switch(config)#hostname ICT_Switch
+ICT_Switch(config)#line console 0
+ICT_Switch(config-line)#password ICT_Switch
+ICT_Switch(config-line)#login
+ICT_Switch(config-line)#enable secret 192.168.1.96/27
+ICT_Switch(config)#line vty 0
+ICT_Switch(config-line)#password 172.16.50.96/27
+ICT_Switch(config-line)#login
+ICT_Switch(config-line)#no ip domain-lookup
+
+**************************************************************
+
+Server-Room_Switch(config)#hostname Server-Room_Switch
+Server-Room_Switch(config)#line console 0
+Server-Room_Switch(config-line)#password Server-Room_Switch
+Server-Room_Switch(config-line)#login
+Server-Room_Switch(config-line)#enable secret 192.168.1.128/27
+Server-Room_Switch(config)#line vty 0
+Server-Room_Switch(config-line)#password 172.16.50.128/27
+Server-Room_Switch(config-line)#login
+Server-Room_Switch(config-line)#no ip domain-lookup

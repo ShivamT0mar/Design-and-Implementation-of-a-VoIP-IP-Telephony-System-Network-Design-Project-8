@@ -1,0 +1,123 @@
+Finance_Router(config)#telephony-service
+Finance_Router(config-telephony)#max-ephones 20
+Finance_Router(config-telephony)#max-dn 20
+Finance_Router(config-telephony)#ip source-address 172.16.50.1  port 2000
+Finance_Router(config-telephony)#auto assign 1 to 20
+Finance_Router(config-telephony)#exit
+
+Finance_Router(config)#ephone-dn 1
+Finance_Router(config-ephone-dn)#number 101
+Finance_Router(config-ephone-dn)#ephone-dn 2
+Finance_Router(config-ephone-dn)#number 102
+Finance_Router(config-ephone-dn)#ephone-dn 3
+Finance_Router(config-ephone-dn)#number 103
+Finance_Router(config-ephone-dn)#ephone-dn 4
+Finance_Router(config-ephone-dn)#number 104
+Finance_Router(config-ephone-dn)#ephone-dn 5
+Finance_Router(config-ephone-dn)#number 105
+Finance_Router(config-ephone-dn)#ephone-dn 6
+Finance_Router(config-ephone-dn)#number 106
+Finance_Router(config-ephone-dn)#ephone-dn 7
+Finance_Router(config-ephone-dn)#number 107
+Finance_Router(config-ephone-dn)#ephone-dn 8
+Finance_Router(config-ephone-dn)#number 108
+Finance_Router(config-ephone-dn)#ephone-dn 9
+Finance_Router(config-ephone-dn)#number 109
+Finance_Router(config-ephone-dn)#ephone-dn 10
+Finance_Router(config-ephone-dn)#number 110
+
+
+**************************************************************************
+
+
+HR_Router(config)#telephony-service
+HR_Router(config-telephony)#max-ephones 20
+HR_Router(config-telephony)#max-dn 20
+HR_Router(config-telephony)#ip source-address 172.16.50.33 port 2000
+HR_Router(config-telephony)#auto assign 1 to 20
+HR_Router(config-telephony)#exit
+
+HR_Router(config)#ephone-dn 1
+HR_Router(config-ephone-dn)#number 201
+HR_Router(config-ephone-dn)#ephone-dn 2
+HR_Router(config-ephone-dn)#number 202
+HR_Router(config-ephone-dn)#ephone-dn 3
+HR_Router(config-ephone-dn)#number 203
+HR_Router(config-ephone-dn)#ephone-dn 4
+HR_Router(config-ephone-dn)#number 204
+HR_Router(config-ephone-dn)#ephone-dn 5
+HR_Router(config-ephone-dn)#number 205
+HR_Router(config-ephone-dn)#ephone-dn 6
+HR_Router(config-ephone-dn)#number 206
+HR_Router(config-ephone-dn)#ephone-dn 7
+HR_Router(config-ephone-dn)#number 207
+HR_Router(config-ephone-dn)#ephone-dn 8
+HR_Router(config-ephone-dn)#number 208
+HR_Router(config-ephone-dn)#ephone-dn 9
+HR_Router(config-ephone-dn)#number 209
+HR_Router(config-ephone-dn)#ephone-dn 10
+HR_Router(config-ephone-dn)#number 210
+
+
+**************************************************************************
+
+
+Sales_Router(config)#telephony-service
+Sales_Router(config-telephony)#max-ephones 20
+Sales_Router(config-telephony)#max-dn 20
+Sales_Router(config-telephony)#ip source-address 172.16.50.65 port 2000
+Sales_Router(config-telephony)#auto assign 1 to 20
+Sales_Router(config-telephony)#exit
+
+Sales_Router(config)#ephone-dn 1
+Sales_Router(config-ephone-dn)#number 301
+Sales_Router(config-ephone-dn)#ephone-dn 2
+Sales_Router(config-ephone-dn)#number 302
+Sales_Router(config-ephone-dn)#ephone-dn 3
+Sales_Router(config-ephone-dn)#number 303
+Sales_Router(config-ephone-dn)#ephone-dn 4
+Sales_Router(config-ephone-dn)#number 304
+Sales_Router(config-ephone-dn)#ephone-dn 5
+Sales_Router(config-ephone-dn)#number 305
+Sales_Router(config-ephone-dn)#ephone-dn 6
+Sales_Router(config-ephone-dn)#number 306
+Sales_Router(config-ephone-dn)#ephone-dn 7
+Sales_Router(config-ephone-dn)#number 307
+Sales_Router(config-ephone-dn)#ephone-dn 8
+Sales_Router(config-ephone-dn)#number 308
+Sales_Router(config-ephone-dn)#ephone-dn 9
+Sales_Router(config-ephone-dn)#number 309
+Sales_Router(config-ephone-dn)#ephone-dn 10
+Sales_Router(config-ephone-dn)#number 310
+
+
+***************************************************************************
+
+
+ICT&Server_Router(config)#telephony-service
+ICT&Server_Router(config-telephony)#max-ephones 20
+ICT&Server_Router(config-telephony)#max-dn 20
+ICT&Server_Router(config-telephony)#ip source-address 172.16.50.97 port 2000
+ICT&Server_Router(config-telephony)#auto assign 1  to 20
+ICT&Server_Router(config-telephony)#exit
+ICT&Server_Router(config)#ephone-dn 1
+ICT&Server_Router(config-ephone-dn)#number 401
+ICT&Server_Router(config-ephone-dn)#ephone-dn 2
+ICT&Server_Router(config-ephone-dn)#number 402
+ICT&Server_Router(config-ephone-dn)#ephone-dn 3
+ICT&Server_Router(config-ephone-dn)#number 403
+ICT&Server_Router(config-ephone-dn)#ephone-dn 4
+ICT&Server_Router(config-ephone-dn)#number 404
+ICT&Server_Router(config-ephone-dn)#ephone-dn 5
+ICT&Server_Router(config-ephone-dn)#number 405
+ICT&Server_Router(config-ephone-dn)#ephone-dn 6
+ICT&Server_Router(config-ephone-dn)#number 406
+ICT&Server_Router(config-ephone-dn)#ephone-dn 7
+ICT&Server_Router(config-ephone-dn)#number 407
+ICT&Server_Router(config-ephone-dn)#ephone-dn 8
+ICT&Server_Router(config-ephone-dn)#number 408
+ICT&Server_Router(config-ephone-dn)#ephone-dn 9
+ICT&Server_Router(config-ephone-dn)#number 409
+ICT&Server_Router(config-ephone-dn)#ephone-dn 10
+ICT&Server_Router(config-ephone-dn)#number 410
+
